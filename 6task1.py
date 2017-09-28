@@ -2,7 +2,7 @@
 #write a function called distance_between_points that takes two Points as arguments and returns the distance between them.
 #Test you function by instantiating two instances and assigning them x and y attributes of type Int
 
-
+import math
 
 
 class point:
@@ -11,13 +11,13 @@ class point:
 		self.y=y
 
 	def distance_between_points(self):
-		distance= math.sqrt(pow(self.x)+pow(self.y))
-		return distnce
+		distance= math.sqrt(pow(self.x,2)+pow(self.y,2))
+		return distance
 
 
 p=point(3,4)
-p.distance_between_point()
-print(p)
+print(p.distance_between_points())
+
 
 
 
